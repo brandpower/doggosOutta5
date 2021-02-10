@@ -12,10 +12,11 @@ body {
 .main-content {
   text-align: center;
   text-transform: uppercase;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   position: relative;
   height: 100vh;
   overflow-y: scroll;
+
 }
 
 .hover,
@@ -34,7 +35,8 @@ h1
 
 h2
  {
-  position: fixed;
+  position: absolute;
+  left: 25%;
   color: #fff;
   font: 50px Montserrat;
 }
@@ -52,39 +54,35 @@ button {
   outline:none;
 }
 
-.concept {
+/* .concept {
   position: relative;
   padding: 5em;
   height: 100vh;
   overflow: hidden;
   scroll-snap-align: center;
-}
-.concept:before {
+} */
+/* .concept:before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+
   background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
   opacity: 0;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
+} */
 .concept:hover:before {
   opacity: 0.5;
 }
 .concept-two {
-  display: grid;
-  grid: 100%/repeat(6, 1fr);
-  padding: 5em 15em;
-  background: url("images/dog.png") center center/cover;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 30px;
+  left: 2%;
+  place-items: center;
+  /* display: grid; */
+  float: left;
+  /* background: url("index.js/dogImage") center center/cover; */
 }
 
-.concept-two .hover {
-  position: relative;
-  display: grid;
-  place-items: center;
-}
 .concept-two h1 {
   color: transparent;
   text-align: 0 1px 1px;
@@ -98,3 +96,4 @@ button {
   -webkit-text-stroke: 2px transparent;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
