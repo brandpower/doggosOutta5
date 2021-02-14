@@ -1,3 +1,15 @@
+var express = require('express');
+var app = express();
+var path = require('path');
+
+// viewed at http://localhost:8080
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/landing.html'));
+});
+
+app.listen(8080);
+
+
 // function to perform a get request
 function httpGet(theUrl) {
     var xmlHttp = new XMLHttpRequest();
@@ -28,8 +40,11 @@ function getRandomImage() {
 
 }
 
-
 function play() {
     var audio = document.getElementById("audio");
     audio.play();
 }
+
+// app.listen(port, function () {
+//     console.log("listen to" + port);
+// });

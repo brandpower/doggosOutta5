@@ -1,18 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #fff;
   font-family: "Comfortaa", sans-serif;
   position: relative;
 }
 
-
-* {
-  box-sizing: border-box;
-}
-
 .main-content {
   text-align: center;
   text-transform: uppercase;
-  /* scroll-snap-type: y mandatory; */
   position: relative;
   height: 100vh;
   overflow-y: scroll;
@@ -54,21 +52,6 @@ button {
   outline:none;
 }
 
-/* .concept {
-  position: relative;
-  padding: 5em;
-  height: 100vh;
-  overflow: hidden;
-  scroll-snap-align: center;
-} */
-/* .concept:before {
-  content: "";
-  position: absolute;
-
-  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
-  opacity: 0;
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-} */
 .concept:hover:before {
   opacity: 0.5;
 }
@@ -78,9 +61,7 @@ button {
   bottom: 30px;
   left: 2%;
   place-items: center;
-  /* display: grid; */
   float: left;
-  /* background: url("index.js/dogImage") center center/cover; */
 }
 
 .concept-two h1 {
@@ -96,4 +77,3 @@ button {
   -webkit-text-stroke: 2px transparent;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
