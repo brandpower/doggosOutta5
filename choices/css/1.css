@@ -10,6 +10,13 @@
         background-image: url(../../images/sun.png);
     }
 
+    h1 {
+        font-size: 20px;
+        position: fixed;
+        top: 0;
+        right: 10%;
+    }
+
     #myVideo {
         position: fixed;
         right: 25%;
